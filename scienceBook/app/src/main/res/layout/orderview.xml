@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginBottom="6dp"
+    android:id="@+id/orderCardView">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:text="Order#"
+        android:textColor="@color/black"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/Orderid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtOrder"
+        android:layout_toRightOf="@+id/txtOrder"
+        android:text="#id"
+        android:textColor="@color/blue"
+        android:textSize="40px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Orderid"
+        android:layout_marginLeft="120dp"
+        android:layout_toRightOf="@+id/Orderid"
+        android:text="Amount:"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtAmount"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/txtAmount"
+        android:text="20.99"
+        android:textColor="#FF9800" />
+
+    <TextView
+        android:id="@+id/txtBookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOrder"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="12dp"
+        android:text="Book:"
+        android:textSize="40px"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/bookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtBookName"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/txtBookName"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBookName"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="18dp"
+        android:text="User:"
+        android:textColor="@color/black"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/Uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtUserName"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/txtUserName"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Uname"
+        android:layout_centerHorizontal="true"
+        android:text="karim@gmail.com"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/OrderPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUserName"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="22dp"
+        android:drawableStart="@drawable/ic_local_phone"
+        android:text="70989098"
+        android:textColor="@color/blue"/>
+
+    <TextView
+        android:id="@+id/OrderAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OrderPhone"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="25dp"
+        android:text="Nabatieh"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/OrderZipcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/OrderAddress"
+        android:layout_marginStart="80dp"
+        android:text="1700"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="96dp"
+        android:layout_height="52dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/ic_sook_home_text"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
+
